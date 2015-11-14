@@ -10,11 +10,8 @@
     "modernizr": "2.8.2",
     "bootstrap-sass": "3.3.5",
     "angular": "~1.3.15",
-    "angular-route": "~1.3.15",
-    "angular-sanitize": "~1.3.15",
-    "angular-slick": "latest",
     "jquery": "~2.1.4",
-    "bootstrap-material-design": "*"
+    "angular-material": "~0.11.4"
   },
   "overrides": {
     "modernizr": {
