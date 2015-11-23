@@ -135,7 +135,7 @@ var jsTasks = function(filename) {
       return gulpif(enabled.maps, sourcemaps.init());
     })
     .pipe(concat, filename)
-    .pipe(ngAnnotate)
+      .pipe(ngAnnotate)
     .pipe(uglify, {
       compress: {
         'drop_debugger': enabled.stripJSDebug

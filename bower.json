@@ -11,7 +11,10 @@
     "bootstrap-sass": "3.3.5",
     "jquery": "~2.1.4",
     "angular": "~1.4.7",
-    "angular-material": "~0.11.4"
+    "angular-material": "~0.11.4",
+    "angular-ui-router": "~0.2.15",
+    "angular-bootstrap": "~0.14.3",
+    "angular-route": "~1.4.7"
   },
   "overrides": {
     "modernizr": {
