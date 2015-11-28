@@ -19,17 +19,6 @@ do_action('get_header');
 get_template_part('templates/header');
 ?>
 <div class="wrap container" role="document">
-  <!--ANGULAR BASIC EXAMPLE
-  <div class="angular-wrap" ng-app="sageApp">
-    <div class="angular" ng-controller="sageAppController">
-      {{hello}}
-    </div>
-  </div>-->
-  <!-- PRUEBA DE ANGULAR: PASO 2-->
-  <!--<div>
-    <input type="text" ng-model="name">
-    <p>Hello, {{name}}!</p>
-  </div>-->
   <div class="content row">
     <main class="main" role="main">
       <?php include Wrapper\template_path(); ?>
