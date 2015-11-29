@@ -1,6 +1,6 @@
 <?php
 /*
- * Template Name: Sage App Example
+ * Template Name: Sage App Examplex
  * Description: Plantilla de pagina personalizada SAGE con Angular
  */
 ?>

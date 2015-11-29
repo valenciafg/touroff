@@ -2,7 +2,7 @@
  * Angular code goes here:
  * ======================================================================== */
 
-var placeApp = angular.module('placeApp', ['ui.router', 'ui.bootstrap','ngRoute'])
+var placeApp = angular.module('placeApp', ['materialApp','ui.router','ngRoute'])
         .config(function($stateProvider, $urlRouterProvider) {
             // For any unmatched url, redirect to /
             $urlRouterProvider.otherwise("/");
@@ -11,7 +11,7 @@ var placeApp = angular.module('placeApp', ['ui.router', 'ui.bootstrap','ngRoute'
             $stateProvider
                 .state('index', {
                     url: '/',
-                    controller: 'placeAppIndexController',
+                    controller: 'placeAppPlacesController',
                     templateUrl: GLOBALS.partialsPath + 'index.html',
                 })
                 .state('index.substate', {
@@ -23,15 +23,17 @@ var placeApp = angular.module('placeApp', ['ui.router', 'ui.bootstrap','ngRoute'
         })
 
         .controller('placeAppController', function($scope) {
-            $scope.hello = "Hola Mundo Bonito";
+            $scope.hello = "Hola desde placeAppController";
         })
 
         .controller('placeAppIndexController', function($scope) {
-            $scope.hello = "Hello Worldx";
+            $scope.hello = "Hola desde placeAppIndexController";
         })
         .controller('placeAppPlacesController', function($scope, $http, $routeParams) {
-            $http.get('http://192.168.1.137/guanaima/wp-json/wp/v2/place/').success(function(res){
+            $http.get('../wp-json/wp/v2/place').success(function(res){
                 $scope.posts = res;
             });
+            $scope.hola = "Hola desde placeAppPlacesController";
+            console.log(' places posts controller  loaded.');
         })
     ;

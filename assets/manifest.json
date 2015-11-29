@@ -1,8 +1,17 @@
 {
   "dependencies": {
-    "places-app.js": {
+    "sage-app.js": {
       "bower": [
         "angular",
+        "angular-ui-router",
+        "angular-bootstrap"
+      ],
+      "files": [
+        "sage-app/**/*.js"
+      ]
+    },
+    "places-app.js": {
+      "bower": [
         "angular-route",
         "angular-ui-router",
         "angular-bootstrap"
@@ -11,15 +20,31 @@
         "place-app/**/*.js"
       ]
     },
+    "material-app.js": {
+      "bower": [
+        "angular-material",
+        "angular-animate",
+        "angular-aria"
+      ],
+      "files": [
+        "material-app/**/*.js"
+      ]
+    },
     "main.js": {
+      "bower": [
+        "angular"
+      ],
       "files": [
         "scripts/main.js"
       ],
       "main": true
     },
     "main.css": {
+      "bower": [
+        "angular-material"
+      ],
       "files": [
-        "styles/main.scss"
+        "styles/layouts/toolbar.css"
       ],
       "main": true
     },
