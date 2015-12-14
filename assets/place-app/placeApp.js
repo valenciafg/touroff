@@ -30,7 +30,7 @@ var placeApp = angular.module('placeApp', ['materialApp','ui.router','ngRoute'])
             $scope.hello = "Hola desde placeAppIndexController";
         })
         .controller('placeAppPlacesController', function($scope, $http, $routeParams) {
-            $http.get('../wp-json/wp/v2/place').success(function(res){
+            $http.get('wp-json/wp/v2/place').success(function(res){
                 $scope.posts = res;
             });
             $scope.hola = "Hola desde placeAppPlacesController";

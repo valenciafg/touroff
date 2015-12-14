@@ -1,3 +1,6 @@
+md-toolbar.md-toolbar-turquese{
+    background-color: #00838F;
+}
 .md-toolbar-tools h1 {
     font-size: inherit;
     font-weight: inherit;
@@ -8,4 +11,102 @@ md-sidenav.md-locked-open {
     width: 150px !important;
     min-width: 150px !important;
     max-width: 150px !important;
+}
+
+md-input-container.md-default-theme .md-input {
+    color: white;
+    border-color: white;
+    margin-top: 24px;
+}
+
+.search-box {
+    float: right;
+    width: 60vw;
+    margin-right: 15px;
+    display: -webkit-flex;
+    -webkit-justify-content: flex-end;
+}
+
+#s {
+    position: absolute;
+    opacity: 0;
+    flex: 0;
+}
+
+.btn {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #CDDC39;
+
+    margin: 12px 15px 12px 0px;
+    text-align: center;
+    font-family: 'FontAwesome';
+    color: #F44336;
+    box-shadow: 0 1px 1.5px rgba(51, 51, 51, 0.7);
+    cursor: pointer;
+}
+
+.btn:active {
+    box-shadow: 0 2px 5px rgba(51, 51, 51, 0.7);
+}
+
+.search {
+    position: relative;
+    width: 0;
+    opacity: 0;
+    padding: 0 20px;
+    outline: none;
+    color: #CDDC39;
+
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid white;
+    transition: width .1s ease-out, border-color .3s ease-out .1s;
+}
+
+.icon-search{
+    /*background-image: url("images/icon/magnify.svg");*/
+    padding-left:25px;
+}
+.search:focus {
+    border-color: white !important;
+}
+
+/*::-webkit-input-placeholder {
+    color: rgba(51, 51, 51, 0.56);
+}*/
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #FFFFFF;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #FFFFFF;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #FFFFFF;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    #FFFFFF;
+}
+
+#s:checked ~ .search {
+    width: 90%;
+    opacity: 1;
+    border-color: #CDDC39;
+}
+
+@media screen and (max-width: 800px) {
+    .search-box {
+        margin: 0;
+        width: 90vw;
+    }
+
+    .btn {
+        width: 25px;
+        height: 25px;
+        line-height: 35px;
+    }
 }

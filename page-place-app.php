@@ -1,6 +1,6 @@
 <?php
 /*
- * Template Name: Home Place Page
+ * Template Name: Home Custom Page
  * Description: Plantilla de Pagina Home usando Sage/Angular
  */
 ?>
